@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload | EtiketinYarisi.com</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+</head>
+
+<body>
+    <section class="background">
+        <img src="assets/image/logo.png" width="300px" alt="logo">
+        <div class="position-content">
+            <h3>Dosyanız Yükleniyor...</h3>
+            <div class="loader">Loading...</div>
+        </div>
+    </section>
+    <div class="card">
+        <div class="content">
+            <img src="assets/image/logo.png" alt="logo">
+            <h2> Excel Dosya Yükleme</h2>
+            <div class="information-area">
+                <form action="?">
+                    <ul id="content-list">
+                        <li>                    
+                            <label class="title-form" for="shop-name">Mağaza Adı</label> <br>
+                            <input class="area-form" id="shop-name" type="text" placeholder="Mağaza Adı" required>
+                        </li>
+                        <li>
+                            <label class="title-form" for="shop-mail">Mağaza Maili</label> <br>
+                            <input class="area-form" id="shop-mail" type="email" placeholder="isim@magazaismi.com" required>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label class="title-form" for="phone-number">Telefon Numaranız</label> <br>
+                            <input class="area-form" id="phone-number" type="tel" placeholder="+90 500 000 00 00" required>
+                        </li>
+                        <li class="file-upload">
+                            <label class="title-form" id="file-upload-btn" for="filebtn"><i class="fas fa-search"></i>  Excel Dosyası </label> <br>
+                            <input id="filebtn" type="file" name="file-uplaod" required>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <hr>
+            <div class="recaptcha-area">
+                <h5>Doğrulama Alanı</h5>
+                <label for="ilk">Bir Sayı Girin</label>
+                <input id="ilk" type="number" required>
+                <label for="iki">Bir Sayı Girin</label>
+                <input id="iki" type="number" required>
+                <label for="sonuc">Toplamını Girin</label>
+                <input id="sonuc" type="number" required>
+            </div>
+            <button class="submit" id="upload">Gönder</button>
+        </div>
+    </div>
+</body>
+<script src="assets/main.js"></script>
+</html>
