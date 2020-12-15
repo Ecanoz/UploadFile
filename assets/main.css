@@ -5,6 +5,7 @@
 }
 
 body {
+    background: linear-gradient(135deg,#1d1d1d85,#fecd1c85);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +25,7 @@ body {
     align-items: center;
     border: solid 1px #1d1d1d;
     border-radius: 1em;
-    background: linear-gradient(135deg,#fecd1c,#ffffff);
+    background: white;
 }
 
 .card h2 {
@@ -72,6 +73,7 @@ input[type=text]:focus, input[type=number]:focus, input[type=tel]:focus, input[t
     text-align: center;
     height: 30px;
     border: none;
+    background-color: #1d1d1d27;
     border-radius: 2px;
     margin-bottom: 7px;
 }
@@ -81,15 +83,16 @@ input[type=text]:focus, input[type=number]:focus, input[type=tel]:focus, input[t
 }
 
 #file-upload-btn {
+    color: black;
     padding: 5px 0;
     text-align: center;
-    box-shadow: 5px 10px 8px #8888883f;
+    box-shadow: 0px 0px 10px #8888883f;
     margin: 10px 0 20px 0;
     vertical-align: middle;
     display: inline-block;
     height: 30px;
     width: 170px;
-    background-color: #ffffff;
+    background-color: #1d1d1d27;
     font-weight: 900;
     cursor: pointer;
     border-radius: 2px;

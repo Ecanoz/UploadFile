@@ -13,8 +13,10 @@ function dogrula() {
 $('#upload').on('click', function () {
   if (Number(sonuc.value)) {
     if ((Number(ilk.value) + Number(iki.value)) == Number(sonuc.value)) {
-      document.querySelectorAll (".background")[0].style.display = "block";
-      var file_data = $('#sortpicture').prop('files')[0];
+
+      
+
+      var file_data = $('#filebtn').prop('files')[0];
       var form_data = new FormData();
       form_data.append('file', file_data);
       console.log(form_data)
@@ -34,13 +36,22 @@ $('#upload').on('click', function () {
             phone: document.getElementById("phone-number").value
           }
           console.log(mydata)
+          if(mydata.data == "Dosya Tipi Doğru"){
+            document.querySelectorAll (".background")[0].style.display = "block";
+          }
+          else{
+            alert('Hatalı Dosya Tipi')
+          }
+
           hh.innerHTML = "Dosya Yüklendi"
         }
       });
-    } else {
-      alert("hatalı")
+    }
+     else {
+      alert("Hata")
     }
   } else {
     alert("hatalı")
   }
+  
 });
