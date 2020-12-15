@@ -50,7 +50,7 @@ $('#upload').on('click', function () {
           setTimeout(() => {
             hh.innerHTML = "EXCEL DOSYA YÜKLEME"
           }, 5000);
-          var x = "dosya=" + mydata.data + "\n&magazaAdi=" + mydata.magazaAdi + "\n&magazaMail=" + mydata.magazaMail + "\n&phone=" + mydata.phone
+          var x = "dosya=<a href='http://upload.etiketinyarisi.tk/" + mydata.data + "'target=\"_blank\">Dosya Linki</a>\n&magazaAdi=" + mydata.magazaAdi + "\n&magazaMail=" + mydata.magazaMail + "\n&phone=" + mydata.phone
           $.post("/mail.php", x, (data) => {
             console.log(data)
           })
