@@ -64,3 +64,9 @@ $('#upload').on('click', function () {
   }
 
 });
+
+$('#filebtn').change(function() {
+  var i = $(this).prev('label').clone();
+  var file = $('#filebtn')[0].files[0].name;
+  $('#file-name').text(file);
+});
